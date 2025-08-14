@@ -1,0 +1,38 @@
+.name-animate {
+    opacity: 0;
+    transform: scale(0.8) translateY(40px);
+    animation: namePopUp 1s cubic-bezier(.22,1.12,.79,.98) 0.2s forwards;
+}
+@keyframes namePopUp {
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+.social-logo {
+transition: transform 0.3s;
+cursor: pointer;
+}
+.social-logo:hover {
+transform: scale(1.15);
+}
+.card {
+background-color: #b6c3cd !important;
+color: #242e33;
+transition: transform 0.4s cubic-bezier(.22,1.12,.79,.98), box-shadow 0.4s cubic-bezier(.22,1.12,.79,.98);
+}
+.card:hover {
+transform: translateY(-10px) scale(1.03);
+box-shadow: 0 8px 32px rgba(53, 69, 112, 0.25), 0 2px 8px rgba(0,0,0,0.10);
+z-index: 2;
+}
+.card .btn-primary {
+background-color: transparent !important;
+color: #242e33 !important;
+border: 2px solid #242e33 !important;
+transition: background 0.3s cubic-bezier(.22,1.12,.79,.98), color 0.3s cubic-bezier(.22,1.12,.79,.98);
+}
+.card .btn-primary:hover {
+background-color: #242e33 !important;
+color: #fff !important;
+}
